@@ -1,5 +1,6 @@
 import pytest
 
+from campaign_lab.analysis import clean
 from campaign_lab.generate import generate
 
 
@@ -10,4 +11,4 @@ def raw():
 
 @pytest.fixture(scope="session")
 def df(raw):
-    return
+    return clean(raw)
