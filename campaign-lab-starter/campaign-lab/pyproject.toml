@@ -4,13 +4,20 @@ version = "0.1.0"
 description = "Practice lab: data analytics in marketing on a synthetic email-campaign RCT"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["pandas>=2.2", "numpy>=2.0"]
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=2.0",
+]
 
 [project.scripts]
 campaign-generate = "campaign_lab.generate:main"
 
 [dependency-groups]
-dev = ["pytest>=8.0", "ruff>=0.6", "pre-commit>=3.8"]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "pre-commit>=3.8",
+]
 
 [build-system]
 requires = ["uv_build>=0.11.7,<0.12.0"]
